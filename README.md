@@ -4,7 +4,7 @@ A simple web scraper for all your Randowis Comics needs.
 ## Requirements
 This script requires:
 * *Python 3*
-    * On Windows use [this installer](https://www.python.org/ftp/python/3.8.2/python-3.8.2.exe).
+    * On Windows use [this](https://www.python.org/downloads/release/python-382/) and download the appropriate installer.
     * On Arch based systems use `sudo pacman -Syu python`.
     * On Debian/Ubuntu based systems use `sudo apt install python3.8`.
     * Mac users aren't real people so they can figure it out themselves.

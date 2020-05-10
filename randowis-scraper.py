@@ -12,6 +12,7 @@ if not dirs.__contains__('comics'):
 
 os.chdir('comics')
 while True:
+
     html = get(f'https://randowis.com/category/short-comics/page/{currentPage}/')
 
     if html.status_code != 200:
@@ -36,6 +37,7 @@ while True:
         writePath = os.path.join(os.getcwd(), dirName, fileName)
 
         if not (os.path.exists(writePath) and os.path.isfile(writePath)):
+            print(f'Comic Page {currentPage}/{fileName} found. Skipping...')
             continue
 
         with open(writePath, "wb") as f:

@@ -77,8 +77,8 @@ def fetch_comics(keep_page_structure):
 def get_args():
     ap = argparse.ArgumentParser()
 
-    ap.add_argument('-f', '--first', help='Gets the first comic on the first page', default=False, action='store_true')
-    ap.add_argument('-ks', '--keep-page-structure', default=True, help="Comics will be separated by pages",
+    ap.add_argument('-f', '--first', help='Gets the first comic on the first page', action='store_true')
+    ap.add_argument('-ks', '--keep-page-structure', help="Comics will be separated by pages",
                     action='store_true')
 
     return vars(ap.parse_args())
